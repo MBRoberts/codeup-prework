@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My First HTML Form</title>
+	</head>
+	<body>
+		<h1>My First Online Forms</h1>
+		<ol>
+			<h2><li>User Login</li></h2>
+			<form method="POST" action="http://requestb.in/1dje0ye1">
+				<p>
+					<label for="username">Username</label>
+					<input id="username" name="username" type="text" placeholder="Enter Username here">
+				</p>
+				<p>
+					<label for="password">Password</label>
+					<input id="password" name="password" type="password" placeholder="Enter Password Here">
+				</p>
+				<p>
+					<button type="submit">Login</button>
+				</p>
+			</form>
+
+			<h2><li>Compose an Email</li></h2>
+			<form method="POST" action="http://requestb.in/1dje0ye1">
+				<p>
+					<label for="send_to">Send To:</label>
+					<input type="text" name="send_to" id="send_to">
+				</p>
+				<p>
+					<label for="from">From:</label>
+					<input id="from" type="text" name="from">
+				</p>
+				<p>
+					<label for="subject">Subject:</label>
+					<input type="text" name="subject" id="subject">
+				</p>
+				<p>
+					<textarea id="email_body" name="email_body" rows="10" cols="40" placeholder="Write Email Here"></textarea>
+				</p>
+					<input type="checkbox" name="save" id="save" value="yes" checked>
+					<label for="save">Save copy in Sent Folder</label>
+				<p>
+					<button type="submit">Send Email</button>
+				</p>
+			</form>
+			
+			<h2><li>Multiple Choice Test</li></h2>
+			<form method="POST" action="http://requestb.in/1dje0ye1">
+				<ol>
+					<li><p>Where am I from?</p></li>
+					<label>
+						<input type="radio" name="q1" value="boston"> Boston
+					</label>
+					<label>
+						<input type="radio" name="q1" value="massachusetts"> Massachusetts
+					</label>
+					<label>
+						<input type="radio" name="q1" value="usa"> USA
+					</label>
+					<label>
+						<input type="radio" name="q1" value="all of the above"> All of the above
+					</label>
+					
+					<li><p>What was my previous profession?</p></li>
+					<label>
+						<input type="radio" name="q2" value="lawyer"> Lawyer
+					</label>
+					<label>
+						<input type="radio" name="q2" value="bartender"> Bartender
+					</label>
+					<label>
+						<input type="radio" name="q2" value="samba_instructor"> Tango Instructor
+					</label>
+					<label>
+						<input type="radio" name="q2" value="astronaut"> Astronaut
+					</label>
+					
+					<li><p>What name(s) do I go by?</p></li>
+					<label>
+						<input type="checkbox" name="name[]" id="name1" value="michael_roberts"> Michael Roberts
+					</label>
+					<label>
+						<input type="checkbox" name="name[]" id="name2" value="benjamin_roberts"> Benjamin Roberts
+					</label>
+					<label>
+						<input type="checkbox" name="name[]" id="name3" value="mike_ben_bob"> Mike Ben Bob
+					</label>
+
+					<p>
+						<li><label for="sports">What is the best sports franchise in the history of their respective sports?</label></li>
+						<select id="sports" name="sports[]" multiple>
+							<option value="Patriots" selected>Patriots</option>
+							<option value="Red Sox" selected>Red Sox</option>
+							<option value="Bruins" selected>Bruins</option>
+							<option value="Celtics" selected>Celtics</option>
+						</select>
+					</p>
+				</ol>
+				<p><button type="submit">Submit Answers</button></p>
+			</form>
+		
+			<h2><li>Select Testing</li></h2>
+			<form method="POST" action="http://requestb.in/1dje0ye1">
+				<label for="transmission">Do you live in Texas?</label>
+				<select id="transmission" name="transmission">
+					<option value="1">Yes</option>
+					<option value="0" selected>No</option>
+				</select>
+				<p><button type="submit">Submit</button></p>
+			</form>			
+		</ol>
+	</body>
+</html>

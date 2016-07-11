@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Break/Continue JS</title>
+	</head>
+	<body>
+		<script>
+			var oddrand = Math.floor((Math.random() * 50) + 1)
+
+			if (oddrand % 2 == 0) {
+				oddrand += 1;
+			} else {
+				oddrand = oddrand;
+			}
+			console.log('Random number to skip: ' + oddrand);
+
+			for (var i = 1; i <= 49; i += 2) {
+				if (i == oddrand) {
+					console.log('Hey, you skipped #' + oddrand);
+					continue;
+				}
+				console.log('Here is an odd number: ' + i);
+			}
+			
+		</script>
+	</body>
+</html>

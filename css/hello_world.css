@@ -1,0 +1,53 @@
+h1 { 
+	color: #3350A2;
+	text-decoration: underline;
+}
+
+h2 {
+	color: #208425;
+	text-decoration: underline;
+}
+
+body {
+	font-family: Courier, "Lucida Console", monospace;
+	background-position: right;
+	background-image: url(http://playindiegames.files.wordpress.com/2010/05/hello-world1.png);
+	background-attachment: fixed; scroll;
+	background-repeat: no-repeat;
+}
+
+ul {
+	list-style-type: '->';
+}
+
+td {
+	padding: .5em;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+th {
+	padding: 1em;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+table {
+	text-align: center;
+}
+
+a:link {
+	color: #0000FF;
+}
+
+a:visited {
+	color: #FF0000;
+}
+
+a:hover {
+	color: #00FF00;
+}
+
+a:active {
+	color: #00FFFF;
+}
